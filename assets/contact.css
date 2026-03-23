@@ -1,0 +1,85 @@
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-contact h1 {
+  font-family: "Unbounded", sans-serif;
+  margin-top: 80px;
+}
+
+.where-p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.social-medias-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.social-media {
+  list-style: none;
+  margin: 40px 0;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+
+  text-decoration: none;
+  color: white;
+
+  font-size: 1.1rem;
+
+  background: linear-gradient(
+    100deg,
+    rgba(40, 53, 164, 1) 0%,
+    rgba(152, 163, 254, 1) 100%
+  );
+
+  padding: 30px 40px;
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.08);
+  background: linear-gradient(
+    0deg,
+    rgba(40, 53, 164, 1) 0%,
+    rgba(152, 163, 254, 1) 100%
+  );
+}
+
+/* ícones */
+.social-media i {
+  font-size: 1.5rem;
+}
+
+/* nome */
+.nickname {
+  font-family: "Unbounded", sans-serif;
+}
+
+/* responsivo */
+@media screen and (max-width: 770px) {
+  .container-contact h1 {
+    font-size: 1.3rem;
+  }
+
+  .where-p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .social-media a {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+}

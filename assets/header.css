@@ -1,0 +1,76 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* menu desktop */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  list-style: none;
+}
+
+/* links */
+.link-header {
+  color: #0d335d;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 0;
+  font-size: 1rem;
+}
+
+.link-header:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #ffcf9c 0%, transparent 100%);
+}
+
+/* botão hamburguer */
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #0d335d;
+}
+
+@media screen and (max-width: 770px) {
+  .btn-menu {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
